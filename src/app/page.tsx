@@ -27,8 +27,8 @@ export default function RootPage() {
   return (
     <main className="min-h-screen overflow-y-auto bg-[rgb(var(--bg))] text-[rgb(var(--text))]">
       <section className="relative isolate overflow-hidden">
-        <div className="hero-grid absolute inset-0 opacity-70" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.18),transparent_32%),radial-gradient(circle_at_80%_20%,rgba(16,185,129,0.15),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
+        <div className="pointer-events-none absolute inset-0 hero-grid opacity-70" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.18),transparent_32%),radial-gradient(circle_at_80%_20%,rgba(16,185,129,0.15),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
 
         <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-8 lg:px-10 lg:py-12">
           <div className="flex items-center justify-between gap-4">
@@ -80,7 +80,7 @@ export default function RootPage() {
                 className="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--border))] bg-[rgba(var(--surface),0.84)] px-4 py-2 text-sm text-[rgb(var(--text-muted))] shadow-sm"
               >
                 <Sparkles size={14} className="text-[rgb(var(--accent))]" />
-                From local-first canvas to full SaaS operating system
+                Built for planning, research, and team execution
               </motion.div>
 
               <motion.h1
@@ -98,8 +98,8 @@ export default function RootPage() {
                 transition={{ delay: 0.1 }}
                 className="mt-5 max-w-2xl text-lg leading-8 text-[rgb(var(--text-muted))]"
               >
-                Chronos now feels like a launch-ready SaaS with a premium shell around the original
-                infinite timeline engine: auth, teams, analytics, billing, and product operations.
+                Chronos gives teams one place to plan work, map timelines, track milestones, and
+                stay aligned without turning the product into a cluttered project-management tool.
               </motion.p>
 
               <motion.div
@@ -221,7 +221,7 @@ export default function RootPage() {
                 </div>
 
                 <div className="mt-6 rounded-3xl bg-slate-950 p-5 text-slate-50">
-                  <p className="text-sm font-medium text-slate-400">What changed in this upgrade</p>
+                  <p className="text-sm font-medium text-slate-400">What you get</p>
                   <div className="mt-4 space-y-3">
                     {PRODUCT_UPDATES.map((update) => (
                       <div key={update} className="flex items-start gap-3 text-sm">

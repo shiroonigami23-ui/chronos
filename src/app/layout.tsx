@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://chronos-rho-six.vercel.app'),
-  title: 'Chronos Cloud — Timeline intelligence for teams that ship',
+  title: 'Chronos Cloud - Timeline intelligence for teams that ship',
   description:
     'Chronos Cloud combines a local-first timeline engine with a polished SaaS shell for teams, billing, workspace visibility, and launch execution.',
   manifest: '/manifest.json',
@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chronos Cloud',
     description:
-      'Timeline intelligence for teams that ship — local-first core, SaaS-grade product shell.',
+      'Timeline intelligence for teams that ship - local-first core with a polished product shell.',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
   },
   appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'Chronos' },
   icons: {
